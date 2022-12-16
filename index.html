@@ -5,21 +5,201 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prutehi Sirena Nonprofit</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css"> 
     <style>
+        .header-container {
+            background: #280e0e;
+            box-shadow: grey 0px 2px 6px 0px;
+        }
         header span {margin: 0 auto;
             display: inline-block
         }
-        header img {width:60vw}
-        
+        header img {
+            width: 60vw
+        }
+        .menu-container {
+            margin: 1em;
+            position: absolute;
+            color: white;
+        }
+
+        .carousel {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            font-family: Arial;
+        }
+        .carousel_list {
+            display: flex;
+            list-style: none;
+            position: relative;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            perspective: 300px;
+        }
+        .carousel_item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 0px;
+            width: 750px;
+            height: 350px;
+            border-radius: 2px;
+            box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+            position: absolute;
+            transition: all 0.3s ease-in;
+        }
+        .carousel_item:nth-child(1) {
+            background: #a5b2ea;
+        }
+        .carousel_item:nth-child(2) {
+            background-image: url(https://www.trees.com/wp-content/uploads/products/medium/1000/Plumeria-1.webp);
+        }
+        .carousel_item:nth-child(3) {
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/fa/Immaculate_Heart_of_Mary.jpg);
+            background-size: cover;
+            background-position: 0px -80px;
+            /* filter: blur(1px) */
+        }
+        .carousel_item:nth-child(4) {
+            background: linear-gradient(45deg, #fdbb2d 0%, #904ED4 100%);
+        }
+        .carousel_item:nth-child(5) {
+            background: linear-gradient(45deg, #22c1c3 0%, #904ED4 100%);
+        }
+        .carousel_item[data-pos="0"] {
+            z-index: 5;
+        }
+        .carousel_item[data-pos="-1"], .carousel_item[data-pos="1"] {
+            opacity: 0.9;
+            filter: blur(1px) grayscale(10%);
+        }
+        .carousel_item[data-pos="-1"] {
+            transform: translateX(-20%) scale(0.9);
+            z-index: 4;
+        }
+        .carousel_item[data-pos="1"] {
+            transform: translateX(20%) scale(0.9);
+            z-index: 4;
+        }
+        .carousel_item[data-pos="-2"], .carousel_item[data-pos="2"] {
+            opacity: 0.7;
+            filter: blur(3px) grayscale(20%);
+        }
+        .carousel_item[data-pos="-2"] {
+            transform: translateX(-35%) scale(0.8);
+            z-index: 3;
+        }
+        .carousel_item[data-pos="2"] {
+            transform: translateX(35%) scale(0.8);
+            z-index: 3;
+        }
+        .card-container, .card-contents {
+            /* width: 100%; why does this break it. also why can't we see the contents
+            height: 100%; */
+        }
+        .card-contents {
+            /* padding: 1em; */
+        }
+        .card-title {
+            /* z-index: 999 */
+        }
+        .card-body {
+        }
     </style>
 </head>
 <body>
+    <div class="menu-container"><i class="fas fa-bars fa-lg"></i></div>
+    <div class="header-container">
     <header>
-        <span>menu</span><span><img src="assets/heading (V1).jpeg" alt="Prutehi Sirena (Protect Sirena) Nonprofit Logo"></span>
+        <div><img src="assets/heading (V1).jpeg" alt="Prutehi Sirena (Protect Sirena) Nonprofit Logo"></div>
     </header>
+    </div>
+    <hr>
+    <section>
+        <!-- carousel from https://codepen.io/frise/pen/mZvKpe -->
+        <div class="carousel">
+            <ul class="carousel_list">
+                <li class="carousel_item" data-pos="-2">
+                    <!-- why can't we see the contents -->
+                        Card Title
+                        <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam excepturi delectus neque dignissimos consequuntur magni ea commodi. Cupiditate odit voluptate corporis vero incidunt eius, doloremque laboriosam aut quibusdam? Quae, reprehenderit?</div>
+                    </li>
+                <li class="carousel_item" data-pos="-1"><div class="card-container">
+                    <div class="card-contents">
+                        <div class="card-title">Card Title</div>
+                        <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam excepturi delectus neque dignissimos consequuntur magni ea commodi. Cupiditate odit voluptate corporis vero incidunt eius, doloremque laboriosam aut quibusdam? Quae, reprehenderit?</div>
+                    </div>
+                </div></li>
+                <li class="carousel_item" data-pos="0"><div class="card-container">
+                    <div class="card-contents">
+                        <div class="card-title">Card Title</div>
+                        <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam excepturi delectus neque dignissimos consequuntur magni ea commodi. Cupiditate odit voluptate corporis vero incidunt eius, doloremque laboriosam aut quibusdam? Quae, reprehenderit?</div>
+                    </div>
+                </div></li>
+                <li class="carousel_item" data-pos="1"><div class="card-container">
+                    <div class="card-contents">
+                        <div class="card-title">Card Title</div>
+                        <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam excepturi delectus neque dignissimos consequuntur magni ea commodi. Cupiditate odit voluptate corporis vero incidunt eius, doloremque laboriosam aut quibusdam? Quae, reprehenderit?</div>
+                    </div>
+                </div></li>
+                <li class="carousel_item" data-pos="2"><div class="card-container">
+                    <div class="card-contents">
+                        <div class="card-title">Card Title</div>
+                        <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam excepturi delectus neque dignissimos consequuntur magni ea commodi. Cupiditate odit voluptate corporis vero incidunt eius, doloremque laboriosam aut quibusdam? Quae, reprehenderit?</div>
+                    </div>
+                </div></li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        const state = {};
+        const carouselList = document.querySelector('.carousel_list');
+        const carouselItems = document.querySelectorAll('.carousel_item');
+        const elems = Array.from(carouselItems);
+
+        carouselList.addEventListener('click', function (event) {
+        var newActive = event.target;
+        var isItem = newActive.closest('.carousel_item');
+
+        if (!isItem || newActive.classList.contains('carousel_item_active')) {
+            return;
+        };
+        
+        update(newActive);
+        });
+
+        const update = function(newActive) {
+        const newActivePos = newActive.dataset.pos;
+
+        const current = elems.find((elem) => elem.dataset.pos == 0);
+        const prev = elems.find((elem) => elem.dataset.pos == -1);
+        const next = elems.find((elem) => elem.dataset.pos == 1);
+        const first = elems.find((elem) => elem.dataset.pos == -2);
+        const last = elems.find((elem) => elem.dataset.pos == 2);
+        
+        current.classList.remove('carousel_item_active');
+        
+        [current, prev, next, first, last].forEach(item => {
+            var itemPos = item.dataset.pos;
+
+            item.dataset.pos = getPos(itemPos, newActivePos)
+        });
+        };
+
+        const getPos = function (current, active) {
+            const diff = current - active;
+
+            if (Math.abs(current - active) > 2) {
+                return -current
+            }
+
+            return diff;
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/0f822d16a6.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
-\
