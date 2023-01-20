@@ -1,0 +1,207 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.brand-logo img {
+  height: 64px;
+}
+
+/* 
+color theme:
+#973C44 maroon
+#BDAA97 creme
+#3A3134 dark
+*/
+
+nav {
+  background: #BDAA97;
+}
+
+.header,h2 {
+  font-family: CloisterBlack, Georgia;
+  color: #973C44;
+}
+h5.header, body {
+  color: #3A3134;
+}
+
+footer.page-footer {
+  background-color: #973C44; 
+}
+
+.carousel {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+}
+.carousel .card {
+  text-align: center;
+  background: #BDAA97;
+  transform: scale(1);
+  transition: 300ms ease all;
+  padding: 0em 1em;
+  margin: 1em;
+  min-height: 50vh;
+  opacity: .8;
+  transform: rotateY(10deg);
+}
+.card.slick-current {
+  transform: scale(1.08);
+  opacity: 1;
+  z-index: 1;
+}
+.card h3 {
+  transition: all 300ms ease
+}
+.slick-next {
+  right: 5px;
+}
+.slick-prev {
+  left: 5px;
+  z-index: 2;
+}
+.slick-prev, .slick-next {
+  width:30px;
+}
+.slick-prev::before, .slick-next::before {
+  font-size: 30px;
+}
+
+.carousel .card, .card .image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  /* filter: saturate(0.5); */
+  color: white;
+}
+#card1 {
+  background-position-y: 30%;
+  background-image: url('../assets/big logo.png');
+}
+#card2 .image {
+  background-position-y: 30%;
+  background-image: url('../assets/streetwear.png');
+}
+#card3 {
+  background-size: 60%;
+  background-position-y: 50%;
+  background-position-x: 50%;
+  background-image: url('../assets/lust.png');
+  background-color: #973C44;
+}
+.carousel .card {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.carousel .card .text {
+  text-align: left;
+  flex: 1;
+  height: 100%;
+  /* margin: 1rem 0; */
+  padding: 5px;
+  padding-left: 2em;
+}
+.text.overlay {
+  background-color: rgba(0,0,0,.3);
+}
+.carousel div.card {
+  display: flex;
+}
+.carousel .card .flex {
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+  margin: 0;
+}
+.carousel .card .flex div {
+  flex: 1;
+}
+
+
+.dark {
+  background-color: #BDAA97;
+  color: #97363e;
+  color: white;
+}
+.dark h2, .dark h5 {
+ color: #97363e;
+}
+.dark textarea {
+  background-color: #a19180;
+}
+#getting-help .input-field, .input-field label {
+  color: white;
+}
+/* stretch the textarea to fill height */
+#getting-help .row {
+  /* display: flex;
+  align-items: stretch; */
+}
+#getting-help .col {
+  /* width: 100%; */
+}
+#getting-help .row .input {
+  /* flex: 1; */
+}
+@media screen and (max-width: 500px) {
+  .carousel {
+    /* margin: 0; */
+    width: 100%;
+  }
+  .brand-logo img {
+    height: 56px;
+  }
+  .carousel .card {
+    position: relative;
+  }
+  .carousel .card .flex {
+    background-color: rgba(0,0,0,.3);
+  }
+  #card2 {
+    background-position-y: 30%;
+    background-image: url('../assets/streetwear.png');
+  }
+}
+#getting-help .row .input textarea {
+  height: 100%;
+  margin-bottom: 5px;
+  border-bottom: 2px solid white;
+}
+#getting-help .row .input textarea:focus {
+  box-shadow: 0 1px 0 0 #97363e;
+  border-bottom: 2px solid #97363e;
+}
+#getting-help .row .input label {
+  left: 5px;
+}
+#getting-help .row .input textarea:focus+label {
+  color: #97363e;
+}
+
+#getting-help .row .input .input-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#getting-help .btn {
+  background-color: #973C44; 
+}
+
+
+
+
+@font-face {
+  font-family: CloisterBlack;
+  src: url(../assets/CloisterBlack.ttf);
+}

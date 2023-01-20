@@ -1,121 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prutehi Sirena Nonprofit</title>
-    <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <style>
-        .header-container {
-            background: #C4191F;
-            /* box-shadow: grey 0px 2px 6px 0px; */
-        }
-        header span {margin: 0 auto;
-            display: inline-block
-        }
-        header img {
-            width: 60vw
-        }
-        .menu-container {
-            margin: 1em;
-            position: absolute;
-            color: white;
-        }
-        body {
-            background: #280e0e;
-            color: white;
-        }
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Prutehi Sirena Non-Profit</title>
 
-        .carousel {
-            width: 80%;
-        }
-        .carousel .card {
-            text-align: center;
-            background: orange;
-            transform: scale(1);
-            transition: 300ms ease all;
-            padding: 0em 1em;
-            margin: 1em;
-            min-height: 50vh;
-            opacity: .8;
-            transform: rotateY(10deg);
-        }
-         .card.slick-current {
-            transform: scale(1.08);
-            opacity: 1;
-        }
-        .card h3 {
-            transition: all 300ms ease
-        }
-    </style>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-    <div class="menu-container"><i class="fas fa-bars fa-lg"></i></div>
-    <div class="header-container">
-    <header>
-        <div><img src="assets/heading (V1).jpeg" alt="Prutehi Sirena (Protect Sirena) Nonprofit Logo"></div>
-    </header>
+  <nav role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="assets/logo.png" alt="logo"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#getting-help">Getting Help</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#footer">Contact Us</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#about-u">About Us</a></li>
+        <li><a href="#getting-help">Getting Help</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#footer">Contact Us</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
-    <hr>
-    <section>
-        <div class="carousel">
-            <div class="card">
-                <h3 class="card-title">blah</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sequi itaque nemo et odio, vitae quam amet, aspernatur perferendis sed inventore earum quaerat enim. Rerum sed alias ut est non.</p>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center">Prutehi Sirena</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">A Tagline for this wonderful non-profit herpyty derpty</h5>
+      </div>
+      <div class="row center">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos temporibus adipisci explicabo harum nisi praesentium eum quo laboriosam blanditiis similique aspernatur aliquid ut minima, consequuntur quidem delectus tempora. Amet, quidem!</p>
+      </div>
+      <br><br>
+      <hr>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="carousel">
+      <div class="card" id="card1">
+          <div class="text overlay">
+            <h3 class="card-title">blah</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sequi itaque nemo et odio, vitae quam amet, aspernatur perferendis sed inventore earum quaerat enim. Rerum sed alias ut est non.</p>
+          </div>
+      </div>
+      <div class="card" id="card2">
+        <div class="row flex left">
+          <div class="col s12 m6">
+            <div class="text">
+              <h3 class="card-title">blah</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sequi itaque nemo et odio, vitae quam amet, aspernatur perferendis sed inventore earum quaerat enim. Rerum sed alias ut est non.</p>
             </div>
-            <div class="card">
-                <h3 class="card-title">blah</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sequi itaque nemo et odio, vitae quam amet, aspernatur perferendis sed inventore earum quaerat enim. Rerum sed alias ut est non.</p>
-            </div>
-            <div class="card">
-                <h3 class="card-title">blah</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sequi itaque nemo et odio, vitae quam amet, aspernatur perferendis sed inventore earum quaerat enim. Rerum sed alias ut est non.</p>
-            </div>
-            <div class="card">
-                <h3 class="card-title">blah</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sequi itaque nemo et odio, vitae quam amet, aspernatur perferendis sed inventore earum quaerat enim. Rerum sed alias ut est non.</p>
-            </div>
-            <div class="card">
-                <h3 class="card-title">blah</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sequi itaque nemo et odio, vitae quam amet, aspernatur perferendis sed inventore earum quaerat enim. Rerum sed alias ut est non.</p>
-            </div>
+          </div>
+          <div class="col s12 m6 image hide-on-med-and-down"></div>
         </div>
-    </section>
-    <script src="https://kit.fontawesome.com/0f822d16a6.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.carousel').slick({
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 1,
-            responsive: [
-                {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 3
-                }
-                },
-                {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
-                }
-                }
-            ]
-            });
-        })
-    </script>
-</body>
+      </div>
+      <div class="card" id="card3">
+        <div class="text overlay">
+          <h3 class="card-title">blah</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sequi itaque nemo et odio, vitae quam amet, aspernatur perferendis sed inventore earum quaerat enim. Rerum sed alias ut est non.</p>
+        </div>
+      </div>
+  </div>
+  </div class="section">
+
+  <div class="section no-pad-bot" id="about-us">
+    <div class="container">
+      <br><br>
+      <h2 class="center">About Us</h2>
+      <div class="row center">
+        <h5 class="header col s12 light">A Tagline for this wonderful non-profit herpyty derpty</h5>
+      </div>
+      <div class="row center">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos temporibus adipisci explicabo harum nisi praesentium eum quo laboriosam blanditiis similique aspernatur aliquid ut minima, consequuntur quidem delectus tempora. Amet, quidem!</p>
+      </div>
+      <br><br>
+      <hr>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Help navigating</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Resource directory</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center"><i class="material-icons">group</i></h2>
+            <h5 class="center">Joyous Support</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <div class="section dark" id="getting-help">
+    <div class="container">
+      <br><br>
+      <h2 class="center">Getting Help</h2>
+      <div class="row center">
+        <div class="col l4 s12">
+          <h5 class="header light">A Tagline for this wonderful non-profit herpyty derpty</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos temporibus adipisci explicabo harum nisi praesentium eum quo laboriosam blanditiis similique aspernatur aliquid ut minima, consequuntur quidem delectus tempora. Amet, quidem!</p>
+          <p>insert contact box to send emails?</p>
+        </div>
+        <div class="col l8 s12 input">
+          <div class="input-container input-field">
+            <textarea class="materialize-textarea" name="help" id="" cols="30" rows="10"></textarea>
+            <label for="help">Tell us what you need..</label>
+            <div>
+              <a class="right waves-effect waves-light btn">Submit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+    </div>
+  </div>
+
+  <div class="section" id="events">
+    <div class="container">
+      <br><br>
+      <h2 class="center">Events</h2>
+      <div class="row center">
+        <h5 class="header col s12 light">A Tagline for this wonderful non-profit herpyty derpty</h5>
+      </div>
+      <div class="row center">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos temporibus adipisci explicabo harum nisi praesentium eum quo laboriosam blanditiis similique aspernatur aliquid ut minima, consequuntur quidem delectus tempora. Amet, quidem!</p>
+      </div>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="assets/logo.png">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://www.diamondpet.com/wp-content/uploads/2021/12/husky-puppy-near-gift-box-121421.jpg">
+              <span class="card-title">Puppy Therapy</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+    </div>
+  </div>
+
+  <footer class="page-footer" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Socials</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Copyright 2023 Sirena Haun
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('.carousel').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 1,
+        responsive: [
+            {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+            }
+        ]
+        });
+    })
+</script>
+  </body>
 </html>
