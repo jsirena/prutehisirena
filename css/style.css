@@ -40,7 +40,8 @@ footer.page-footer {
 }
 
 .carousel {
-  width: 80%;
+  /* width: 80%; */
+  width: 100%;
   margin: 0 auto;
   height: 100%;
 }
@@ -49,11 +50,11 @@ footer.page-footer {
   background: #BDAA97;
   transform: scale(1);
   transition: 300ms ease all;
-  padding: 0em 1em;
-  margin: 1em;
+  margin: 3rem;
   min-height: 50vh;
   opacity: .8;
   transform: rotateY(10deg);
+  transform: scaleX(1.1);
 }
 .card.slick-current {
   transform: scale(1.08);
@@ -64,10 +65,10 @@ footer.page-footer {
   transition: all 300ms ease
 }
 .slick-next {
-  right: 5px;
+  right: 1rem;
 }
 .slick-prev {
-  left: 5px;
+  left: 1rem;
   z-index: 2;
 }
 .slick-prev, .slick-next {
@@ -102,7 +103,6 @@ footer.page-footer {
 .carousel .card {
   display: flex;
   flex-direction: column;
-  padding: 0;
 }
 .carousel .card .text {
   text-align: left;
@@ -164,6 +164,8 @@ footer.page-footer {
   }
   .carousel .card {
     position: relative;
+    margin: 0.5rem;
+    transform: rotateY(10deg);
   }
   .carousel .card .flex {
     background-color: rgba(0,0,0,.3);
@@ -171,6 +173,9 @@ footer.page-footer {
   #card2 {
     background-position-y: 30%;
     background-image: url('../assets/streetwear.png');
+  }
+  #card3 {
+    background-size: cover;
   }
 }
 #getting-help .row .input textarea {
