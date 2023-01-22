@@ -122,7 +122,7 @@ footer.page-footer {
 .dark h2, .dark h5 {
  color: #97363e;
 }
-.dark textarea {
+.dark textarea, input#email[type=email] {
   background-color: #a19180;
 }
 #getting-help .input-field, .input-field label {
@@ -159,14 +159,14 @@ footer.page-footer {
   margin-bottom: 5px;
   border-bottom: 2px solid white;
 }
-#getting-help .row .input textarea:focus {
+#getting-help .row .input textarea:focus, #getting-help input:focus {
   box-shadow: 0 1px 0 0 #97363e;
   border-bottom: 2px solid #97363e;
 }
 #getting-help .row .input label {
   left: 5px;
 }
-#getting-help .row .input textarea:focus+label {
+#getting-help .row .input textarea:focus+label, #getting-help input:focus+label {
   color: #97363e;
 }
 
