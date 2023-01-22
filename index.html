@@ -130,23 +130,35 @@
   <div class="section dark" id="getting-help">
     <div class="container">
       <br><br>
-      <h2 class="center">Getting Help</h2>
-      <div class="row center">
-        <div class="col l4 s12">
-          <h5 class="header light">A Tagline for this wonderful non-profit herpyty derpty</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos temporibus adipisci explicabo harum nisi praesentium eum quo laboriosam blanditiis similique aspernatur aliquid ut minima, consequuntur quidem delectus tempora. Amet, quidem!</p>
-          <p>insert contact box to send emails?</p>
-        </div>
-        <div class="col l8 s12 input">
-          <div class="input-container input-field">
-            <textarea class="materialize-textarea" name="help" id="" cols="30" rows="10"></textarea>
-            <label for="help">Tell us what you need..</label>
-            <div>
-              <a class="right waves-effect waves-light btn">Submit</a>
+      <form action="https://formsubmit.co/admin@prutehisirena.org" mathod="POST">
+        <h2 class="center">Getting Help</h2>
+        <div class="row center">
+          <div class="col l4 s12">
+            <h5 class="header light">A Tagline for this wonderful non-profit herpyty derpty</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos temporibus adipisci explicabo harum nisi praesentium eum quo laboriosam blanditiis similique aspernatur aliquid ut minima, consequuntur quidem delectus tempora. Amet, quidem!</p>
+            <p>insert contact box to send emails?</p>
+          </div>
+          <div class="col l8 s12 input">
+            <div class="input-field s8">
+              <input id="email" type="email" class="validate" name="email" required placeholder="Email Address">
+              <label for="email">Email</label>
+              <input type="hidden" name="_subject" value="New HELP Request!">
+              <input type="hidden" name="_autoresponse" value="Thank you for reaching out to us! We're here for you. We'll get back to you as soon as we can.">
+            </div>
+            <div class="input-container input-field">
+              <textarea class="materialize-textarea validate" name="body" id="" cols="30" rows="10"></textarea>
+              <label for="body">Tell us what you need..</label>
+            </div>
+            <div class="input-container input-field">
+              <div>
+                <button class="right btn waves-effect waves-light" type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </form>
       <br><br>
     </div>
   </div>
