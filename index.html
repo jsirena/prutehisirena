@@ -8,8 +8,6 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
-  <link rel="stylesheet" href="slick/slick.css">
-  <link rel="stylesheet" href="slick/slick-theme.css">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
@@ -49,13 +47,13 @@
 
   <div class="section">
     <div class="carousel">
-      <div class="card" id="card1">
+      <div class="carousel-item card" id="card1">
           <div class="text overlay">
             <h3 class="card-title">blah</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sequi itaque nemo et odio, vitae quam amet, aspernatur perferendis sed inventore earum quaerat enim. Rerum sed alias ut est non.</p>
           </div>
       </div>
-      <div class="card" id="card2">
+      <div class="carousel-item card" id="card2">
         <div class="row flex left">
           <div class="col s12 m6">
             <div class="text">
@@ -66,7 +64,7 @@
           <div class="col s12 m6 image hide-on-med-and-down"></div>
         </div>
       </div>
-      <div class="card" id="card3">
+      <div class="carousel-item card" id="card3">
         <div class="text overlay">
           <h3 class="card-title">blah</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sequi itaque nemo et odio, vitae quam amet, aspernatur perferendis sed inventore earum quaerat enim. Rerum sed alias ut est non.</p>
@@ -242,32 +240,8 @@
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script>
     $(document).ready(function(){
-        $('.carousel').slick({
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 1,
-        responsive: [
-            {
-            breakpoint: 768,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
-            }
-            },
-            {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
-            }
-            }
-        ]
-        });
-    })
+      $('.carousel').carousel({numVisible: 3});
+    });
 </script>
   </body>
 </html>
